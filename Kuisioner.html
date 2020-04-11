@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>	
+<!--<meta http-equiv="refresh" content="35;url=http://155.125.220.18:8080/Defect/FCDefectDisplay.html">-->
+<script type="text/javascript">
+var time = 120; //time for changing needed
+
+var frames = Array(
+   'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=62063221&format=interactive', time,
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=346142853&format=interactive',time,
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=288258415&format=interactive',time,
+	'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=1350767867&format=interactive',time,
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=2063597343&format=interactive',time,
+	'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=1920003021&format=interactive',time);
+var frames2 = Array(
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=62063221&format=interactive', time,
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=346142853&format=interactive',time,
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=288258415&format=interactive',time,
+	'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=1350767867&format=interactive',time,
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=2063597343&format=interactive',time,
+	'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=1920003021&format=interactive',time);
+var frames3 = Array(
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=62063221&format=interactive', time,
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=346142853&format=interactive',time,
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=288258415&format=interactive',time,
+	'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=1350767867&format=interactive',time,
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=2063597343&format=interactive',time,
+	'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=1920003021&format=interactive',time);
+var frames4 = Array(
+   'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=62063221&format=interactive', time,
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=346142853&format=interactive',time,
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=288258415&format=interactive',time,
+	'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=1350767867&format=interactive',time,
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=2063597343&format=interactive',time,
+	'https://docs.google.com/spreadsheets/d/e/2PACX-1vSadLLW10FD2Y2MrOilC_-hVUd4ytrKg-IFWnlrm4rCESzaQwNnx48_dlmF_jWFwOxRH9W3Vvffq0hr/pubchart?oid=1920003021&format=interactive',time);
+
+var i = 0, len = frames.length;
+var j = 0, len2 = frames2.length;
+var k = 0, len3 = frames3.length;
+var l = 0, len4 = frames4.length;
+
+function ChangeSrc()
+{
+  if(i==len && j==len2 && k==len3 && l==len4){
+	/*if(document.getElementById("HCTV")){
+		setTimeout(function(){document.getElementById("HCTV").submit()},100);
+	}*/
+	  }
+  if (i >= len) {i=0}; // no more changing
+  if (j >= len2) {j=0}; // no more changing
+  if (k >= len3) {k=0}; // no more changing
+  if (l >= len4) {l=0}; // no more changing
+  document.getElementById('frame').src = frames[i++];
+  document.getElementById('frame2').src = frames2[j++];
+  document.getElementById('frame3').src = frames3[k++];  
+  document.getElementById('frame4').src = frames4[l++];
+   
+
+  setTimeout('ChangeSrc()', (frames[i++]*100), (frames2[j++]*100), (frames3[k++]*100), (frames4[l++]*100));
+
+
+ 	setTimeout(function(){window.scrollTo(0, 1500); m++;},10000);
+	setTimeout(function(){window.scrollTo(0, 0);p++;},30000);
+	
+}
+window.onload = ChangeSrc;
+</script>
+</head>
+	<body>
+	<!--<form name="HCTV" id="HCTV" method="POST" action="http://155.125.220.18:8080/Defect/FCDefectDisplay.html">-->
+	<iframe src="" name="frame2" id="frame2" width="45%" height=485></iframe>
+	<iframe src="" name="frame4" id="frame4" width="45%" height=485></iframe>
+	<iframe src="" name="frame3" id="frame3" width="45%" height=485></iframe>	
+	<iframe src="" name="frame" id="frame"  width="45%" height=485></iframe>
+<!--	</form>-->
+
+</body>
+</html>
